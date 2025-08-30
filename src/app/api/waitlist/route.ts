@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase";
 
+// Route segment config for Next.js App Router
+export const maxDuration = 10;
+
 export async function POST(req: NextRequest) {
   try {
     if (!supabaseAdmin) {
